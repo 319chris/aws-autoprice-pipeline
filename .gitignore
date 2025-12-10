@@ -1,18 +1,23 @@
-# macOS
-.DS_Store
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.*
+infra/terraform/crash.log
+infra/terraform/tfplan
+
+# 通用 Terraform 忽略（将来如果有别的 Terraform 目录也通用）
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
 
 # Python
 __pycache__/
 *.pyc
 .venv/
-.env
+venv/
 
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-
-# IDE
+# Mac / IDE
+.DS_Store
 .vscode/
 .idea/
